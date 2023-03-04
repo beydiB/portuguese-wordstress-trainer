@@ -11,8 +11,11 @@
     <!-- <div :class="['result', this.correct ? 'correct' : 'wrong']" v-if="!isDisabled">{{ correct ? 'correct' : 'wrong' }}</div> -->
     <span class="syllables"  :disabled="!isDisabled" @click="checkAnswer($event)" v-for="(x,i) in currentWord.syllables " :data-id="i" :key="x">{{ x }}</span>
   </div>
-  <div :class="['resultBox', this.correct ? 'correct' : 'wrong']" v-if="!isDisabled">
+  <div :class="['resultBox',correct ? 'correct' : 'wrong']" v-if="!isDisabled">
     <p>{{ correct ? 'correct' : 'wrong' }}</p>
+    <img  v-if="correct" src='../assets/Green-Tick.svg' alt="">
+    <img  v-else src="../assets/wrong.svg" alt="">
+    <hr>
     <span>[</span>
     <span :class="i == currentWord.stress ? 'underline' : ''  " v-for="(x,i) in currentWord.syllables" :key="i"> {{ i == currentWord.stress ? "'" + x: x }}</span>
     <span>]</span>
@@ -162,5 +165,9 @@ button {
 
 .playBtn{
   width: 40px;
+}
+
+.resultBox img{
+  width: 80px;
 }
 </style>
