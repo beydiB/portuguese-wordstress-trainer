@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{ currentWord.word }}</h1>
+    <div @click="play">
+      <img  class="playBtn" src="../assets/play-button.svg" alt="">
+    </div>
     <p>{{ currentWord.definition }}</p>
     <p>{{ currentWord.ipa }}</p>
     {{ currentWord[0] }}
@@ -33,13 +36,15 @@ export default {
           syllables: ['bra','sil'],
           ipa: '/brazil/',
           definition: 'brazil',
-          audio: '',
+          audio: 'https://educalingo.com/audio/pt/26978.mp3',
           stress: 1
         },
         {
           word: 'você',
           syllables: ['vo','cê'],
-          audio: '',
+          ipa:  '/vose/',
+          definition: 'you',
+          audio: 'https://educalingo.com/audio/pt/164643.mp3',
           stress: 1
         },
         {
@@ -47,7 +52,7 @@ export default {
           syllables: ['ce','go'],
           ipa: '/sεgu/',
           definition: 'blind',
-          audio: '',
+          audio: 'https://educalingo.com/audio/pt/34161.mp3',
           stress: 0
         },
         
@@ -78,7 +83,12 @@ export default {
       } else {this.correct = false}
       this.isDisabled = false
     }
-      }
+    },
+    play() {
+      let audio = new Audio(this.currentWord.audio)
+      console.log(this.currentWord.audio)
+      audio.play()
+    }
       
   },
   mounted() {
@@ -148,5 +158,9 @@ button {
 }
 .underline{
   text-decoration: underline;
+}
+
+.playBtn{
+  width: 40px;
 }
 </style>
