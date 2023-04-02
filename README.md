@@ -1,4 +1,4 @@
-# Portuguese word-stress
+<h1> Portuguese word-stress </h1>
 
 https://portuguese-wordstress-trainer.vercel.app/ <br>
 Portuguese being a stress-timed language means that the syllables in words with more than one syllable are not pronounced with the same emphasis or length.
