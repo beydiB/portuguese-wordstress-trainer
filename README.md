@@ -4,7 +4,8 @@ The Portuguese language is stress-timed, meaning that words with more than one s
 This simple web application helps you practice stress patterns by giving you random Portuguese words and asking you to stress the correct syllable. It's a great tool for anyone learning Portuguese, whether you're a beginner or an advanced learner.
 
 ## Usage
-To use the app, simply visit https://portuguese-wordstress-trainer.vercel.app and start practicing! The app will give you a random Portuguese word and ask you to stress the correct syllable.
+To use the app, simply visit https://portuguese-wordstress-trainer.vercel.app and start practicing! 
+The app will give you a random Portuguese word and ask you to stress the correct syllable.
 
 ## Features
 Randomly generated Portuguese words
