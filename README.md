@@ -13,7 +13,7 @@ Practice stress patterns
 ## To Do
 Add more words to the app
 Keep track of the number of correct and incorrect answers
-Add different levels of difficulty
+Add different levels of difficulty.
 ## Contributing
 If you're interested in contributing to the project, feel free to submit a pull request. Contributions are always welcome!
 
